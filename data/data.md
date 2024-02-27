@@ -1,0 +1,1 @@
+Vindr-Mammo dataset can be found on Kaggle, which is a private competition dataset since it allows to upload more than 100GB data. To access on Kaggle, reach me out.
