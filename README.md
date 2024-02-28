@@ -12,18 +12,10 @@ The aim of this repository is to create a basic ML pipeline to detect breast can
 
 Currently, there are trained two model variants, YOLOv5-S and YOLOv5-L. Each model is trained for 10 epochs. Dataset is processed to include just mass categories. Because there is a high category imbalance and the most frequent category is mass type for cancer. Two types of detection are used: BI-RADS and Mass. BI-RADS detection consists of 3-class: BI-RADS 3, BI-RADS 4, and BI-RADS 5. Each mass is detected and classified accordingly. However, it suffers from data-imbalance, as BI-RADS 3 is more frequent. Mass detection consists of 1-class: Mass. The goal is to detect only mass areas, which achieves great performance.
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/breast_birads_distribution.png" alt="Breast BI-RADS Distribution" width="200"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/finding_birads_distribution.png" alt="Tumor BI-RADS Distribution" width="200"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="assets/breast_birads_distribution.png" alt="Breast BI-RADS Distribution" width="400" style="margin-right: 20px"/>
+  <img src="assets/finding_birads_distribution.png" alt="Tumor BI-RADS Distribution" width="400"/>
+</div>
 
 
 ### Abstract of Dataset Paper
