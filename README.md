@@ -12,6 +12,20 @@ The aim of this repository is to create a basic ML pipeline to detect breast can
 
 Currently, there are trained two model variants, YOLOv5-S and YOLOv5-L. Each model is trained for 10 epochs. Dataset is processed to include just mass categories. Because there is a high category imbalance and the most frequent category is mass type for cancer. Two types of detection are used: BI-RADS and Mass. BI-RADS detection consists of 3-class: BI-RADS 3, BI-RADS 4, and BI-RADS 5. Each mass is detected and classified accordingly. However, it suffers from data-imbalance, as BI-RADS 3 is more frequent. Mass detection consists of 1-class: Mass. The goal is to detect only mass areas, which achieves great performance.
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/breast_birads_distribution.png" alt="Breast BI-RADS Distribution" width="200"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/finding_birads_distribution.png" alt="Tumor BI-RADS Distribution" width="200"/>
+    </td>
+  </tr>
+</table>
+
+
 ### Abstract of Dataset Paper
 
 Mammography, or breast X-ray imaging, is the most widely used imaging modality to detect cancer and other breast diseases. Recent studies have shown that deep learning-based computer-assisted detection and diagnosis (CADe/x) tools have been developed to support physicians and improve the accuracy of interpreting mammography. A number of large-scale mammography datasets from different populations with various associated annotations and clinical data have been introduced to study the potential of learning-based methods in the field of breast radiology.
